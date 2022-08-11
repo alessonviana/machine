@@ -1,17 +1,7 @@
 variable "name" {
   type    = string
-  default = "meetup_ansible"
+  default = "Oracle_machine"
 }
-
-/*
-Available flex shapes:
-"VM.Optimized3.Flex"  # Intel Ice Lake
-"VM.Standard3.Flex"   # Intel Ice Lake
-"VM.Standard.A1.Flex" # Ampere Altra
-"VM.Standard.E3.Flex" # AMD Rome
-"VM.Standard.E4.Flex" # AMD Milan
-*/
-
 variable "shape" {
   type    = string
   default = "VM.Optimized3.Flex"
@@ -24,7 +14,7 @@ variable "how_many_nodes" {
 
 variable "display_name" {
   type    = string
-  default = "Meetup_Ansible"
+  default = "Oracle_machine"
 }
 
 variable "operating_system" {

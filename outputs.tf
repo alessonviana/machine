@@ -1,4 +1,4 @@
-output "ssh-with-promethues-user" {
+output "ssh-with-oracle-user" {
   value = format(
     "\nssh -i %s -l %s %s\n",
     local_file.ssh_private_key.filename,
@@ -7,7 +7,7 @@ output "ssh-with-promethues-user" {
   )
 }
 
-output "ssh-with-ubuntu-user" {
+output "ssh-with-oracle-user" {
   value = join(
     "\n",
     [for i in oci_core_instance._ :
